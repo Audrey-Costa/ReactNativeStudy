@@ -9,7 +9,7 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
     const scaleImage = useSharedValue(imageSize);
     const translateX = useSharedValue(0);
     const translateY = useSharedValue(0);
-
+    
     const onDoubleTap = useAnimatedGestureHandler({
         onActive: () => {
             if (scaleImage.value <= imageSize * 4) {
